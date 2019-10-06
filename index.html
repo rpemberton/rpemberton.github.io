@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Rob Pemberton, software engineer in London</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rob Pemberton">
+    <meta name="description" content="Software engineer in London">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <style>
+      :root {
+        --color-accent: aquamarine;
+        --color-body-background: white;
+        --color-text-body: #222;
+        --color-text-title: #111;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--color-body-background);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        color: var(--color-text-body);
+        text-rendering: optimizeLegibility;
+      }
+
+      .wrapper {
+        max-width: 700px;
+      }
+
+      .card {
+        min-height: 100vh;
+        padding: 40px 20px;
+        border-left: 20px solid var(--color-accent);
+      }
+
+      .card__title {
+        font-size: 30px;
+        color: var(--color-text-title);
+      }
+
+      .card__intro {
+        font-size: 40px;
+      }
+
+      .social {
+        padding: 0;
+        list-style: none;
+      }
+
+      .social__item {
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .social__link {
+        font-size: 22px;
+      }
+
+      @media (min-width: 500px) {
+        .wrapper {
+          margin: 60px auto;
+        }
+
+        .card {
+          min-height: auto;
+        }
+
+        .card__intro {
+          font-size: 50px;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-body-background: #24292e;
+          --color-text-body: white;
+          --color-text-title: white;;
+        }
+
+        .social__link {
+          color: white;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="card">
+          <h1 class="card__title">
+            Rob Pemberton
+          </h1>
+
+          <p class="card__intro">
+            Hi 👋, I'm a software engineer in London, and specialise in front end development.
+          </p>
+
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://github.com/rpemberton">
+                GitHub
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://linkedin.com/in/rob-p-839820109">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      console.log(`
+Hello again 👋,
+Let's work together.
+      `);
+    </script>
+  </body>
+</html>
